@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OxTMO - Opere Bitcoin de Forma Inteligente</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- MUDANÇA PRINCIPAL: Configuração do Tailwind movida para dentro do script principal -->
+    <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -22,15 +24,20 @@
             }
         }
     </script>
+    
+    <!-- Estilo para evitar o "flash" de conteúdo sem estilo enquanto a página carrega -->
+    <style>
+        body { visibility: hidden; }
+    </style>
 </head>
-<body class="bg-dark-bg text-white font-poppins">
+<body class="bg-dark-bg text-white font-poppins" style="visibility: visible;">
     <!-- Header -->
     <header class="bg-card-bg/50 backdrop-blur-sm fixed w-full z-50 border-b border-gray-800">
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
-                    <!-- MUDANÇA: Usando o caminho relativo para a imagem -->
-                    <img src="logo 15.png" alt="Logo OxTMO" class="w-12 h-12">
+                    <!-- MUDANÇA: Renomeado para um nome de arquivo sem espaços (boa prática) -->
+                    <img src="logo-oxtmo.png" alt="Logo OxTMO" class="w-12 h-12">
                     <div class="text-2xl font-bold text-white">OxTMO</div>
                 </div>
                 <button class="bg-ox-red text-white px-6 py-2 rounded-lg font-semibold hover:bg-ox-red/90 transition-all">
@@ -40,15 +47,205 @@
         </div>
     </header>
 
-    <!-- ... (O restante do código continua igual) ... -->
+    <!-- ... O resto do seu HTML continua aqui ... -->
     
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 bg-gradient-to-br from-dark-bg via-black to-dark-bg">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                Opere Bitcoin de Forma <span class="text-ox-red">Inteligente</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-300 max-w-3xl mx-auto">
+                Deixe nossa IA trabalhar por você. Maximize seus resultados em Cripto com a Estratégia RoboBTC.
+            </p>
+            <button class="bg-ox-red text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-ox-red/90 transition-all transform hover:scale-105">
+                QUERO ACESSO À ESTRATÉGIA
+            </button>
+        </div>
+    </section>
+
+    <!-- Problema Section -->
+    <section class="py-16 bg-card-bg/30">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8 text-white">O Desafio do Mercado Cripto</h2>
+                <p class="text-lg text-gray-300 leading-relaxed">
+                    O mercado de criptoativos não para. Analisar gráficos e encontrar as melhores entradas exige tempo e conhecimento técnico avançado. 
+                    <span class="text-white font-semibold">E se você pudesse automatizar isso?</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Section -->
+    <section class="py-20 bg-gradient-to-r from-dark-bg to-card-bg/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Performance Comprovada</h2>
+                <p class="text-xl text-gray-300">Resultados do último mês que falam por si</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <!-- Métricas -->
+                <div class="bg-card-bg rounded-2xl p-8 border border-gray-800">
+                    <h3 class="text-2xl font-bold mb-6 text-ox-red">Métricas de Performance</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between p-4 bg-dark-bg/50 rounded-lg">
+                            <span class="text-lg">Rentabilidade</span>
+                            <span class="text-2xl font-bold text-ox-red">+4.77%</span>
+                        </div>
+                        <div class="flex items-center justify-between p-4 bg-dark-bg/50 rounded-lg">
+                            <span class="text-lg">Taxa de Acerto</span>
+                            <span class="text-2xl font-bold text-ox-red">83.33%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Área para Gráficos Personalizados -->
+                <div class="bg-card-bg rounded-2xl p-8 border border-gray-800">
+                    <h3 class="text-2xl font-bold mb-6 text-ox-red">Comparação de Performance</h3>
+                    
+                    <div class="bg-dark-bg/50 rounded-lg p-8 mb-6 border-2 border-dashed border-gray-700 min-h-[300px] flex flex-col items-center justify-center">
+                        <svg class="w-16 h-16 text-ox-red/50 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                        </svg>
+                        <p class="text-ox-red/70 text-center font-medium">Área reservada para gráfico de performance</p>
+                        <p class="text-gray-400 text-sm text-center mt-2">Substitua esta área pelo seu gráfico personalizado</p>
+                    </div>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span>RoboBTC</span>
+                            <div class="flex items-center">
+                                <div class="w-32 bg-dark-bg/50 rounded-full h-4 mr-3">
+                                    <div class="bg-ox-red h-4 rounded-full" style="width: 95%"></div>
+                                </div>
+                                <span class="text-ox-red font-bold">+4.77%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>Ibovespa</span>
+                            <div class="flex items-center">
+                                <div class="w-32 bg-dark-bg/50 rounded-full h-4 mr-3">
+                                    <div class="bg-red-600 h-4 rounded-full" style="width: 20%"></div>
+                                </div>
+                                <span class="text-red-500 font-bold">-2.1%</span>
+                            </div>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <span>CDI</span>
+                            <div class="flex items-center">
+                                <div class="w-32 bg-dark-bg/50 rounded-full h-4 mr-3">
+                                    <div class="bg-yellow-500 h-4 rounded-full" style="width: 30%"></div>
+                                </div>
+                                <span class="text-yellow-500 font-bold">+0.8%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p class="text-gray-300 font-semibold mt-6 text-center">
+                        "Enquanto o mercado tradicional caía, nossa estratégia gerava lucro."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Métricas de Confiança -->
+    <section class="py-16 bg-card-bg/30">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Controle de Risco Avançado</h2>
+                <p class="text-lg text-gray-300">Tecnologia focada em preservar seu capital</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-card-bg rounded-xl p-8 text-center border border-gray-800">
+                    <div class="w-16 h-16 bg-ox-red/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-ox-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Máximo Drawdown</h3>
+                    <p class="text-3xl font-bold text-ox-red mb-2">1.23%</p>
+                    <p class="text-gray-300">Estratégia com foco em controle de risco</p>
+                </div>
+                
+                <div class="bg-card-bg rounded-xl p-8 text-center border border-gray-800">
+                    <div class="w-16 h-16 bg-ox-red/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-ox-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Profit Factor</h3>
+                    <p class="text-3xl font-bold text-ox-red mb-2">4.72x</p>
+                    <p class="text-gray-300">Para cada real de risco, o retorno foi 4.72 vezes maior</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planos e Preços -->
+    <section class="py-20 bg-gradient-to-br from-dark-bg to-card-bg/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Comece Hoje Mesmo</h2>
+                <p class="text-xl text-gray-300">Acesso completo à estratégia RoboBTC</p>
+            </div>
+            
+            <div class="max-w-md mx-auto">
+                <div class="bg-card-bg rounded-2xl p-8 border-2 border-ox-red relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                        <span class="bg-ox-red text-white px-4 py-1 rounded-full text-sm font-semibold">MAIS POPULAR</span>
+                    </div>
+                    <div class="text-center">
+                        <h3 class="text-2xl font-bold mb-4">Assinatura Mensal</h3>
+                        <div class="mb-6">
+                            <span class="text-5xl font-bold text-ox-red">R$ 50</span>
+                            <span class="text-gray-300">/mês</span>
+                        </div>
+                        <ul class="space-y-3 mb-8 text-left">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Acesso completo ao RoboBTC
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Sinais em tempo real
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Relatórios de performance
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                Suporte técnico especializado
+                            </li>
+                        </ul>
+                        <button class="w-full bg-ox-red text-white py-4 rounded-lg text-lg font-semibold hover:bg-ox-red/90 transition-all transform hover:scale-105">
+                            COMEÇAR A OPERAR COM IA
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer/Disclaimer -->
     <footer class="bg-card-bg py-12 border-t border-gray-800">
         <div class="container mx-auto px-6">
             <div class="text-center mb-8">
                 <div class="flex items-center justify-center space-x-4 mb-4">
-                    <!-- MUDANÇA: Usando o caminho relativo para a imagem -->
-                    <img src="logo 15.png" alt="Logo OxTMO" class="w-14 h-14">
+                    <!-- MUDANÇA: Renomeado para um nome de arquivo sem espaços (boa prática) -->
+                    <img src="logo-oxtmo.png" alt="Logo OxTMO" class="w-14 h-14">
                     <div class="text-3xl font-bold text-white">OxTMO</div>
                 </div>
                 <p class="text-gray-400 max-w-2xl mx-auto">
@@ -73,7 +270,7 @@
         </div>
     </footer>
 
-    <!-- O JavaScript permanece o mesmo -->
+    <!-- O JavaScript de animações permanece o mesmo -->
     <script>
         document.querySelectorAll('button').forEach(button => {
             button.addEventListener('click', function() {
