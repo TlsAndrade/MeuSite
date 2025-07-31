@@ -27,13 +27,11 @@
     </style>
 </head>
 <body class="bg-dark-bg text-white font-poppins" style="visibility: visible;">
-    <!-- Header -->
     <header class="bg-card-bg/50 backdrop-blur-sm fixed w-full z-50 border-b border-gray-800">
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center space-x-4">
                     <img src="logo-oxtmo.png" alt="Logo OxTMO" class="w-30 h-20">
-                    
                 </div>
                 <a href="inscricao.html" class="bg-ox-red text-white px-6 py-2 rounded-lg font-semibold hover:bg-ox-red/90 transition-all">
                     GARANTIR MINHA VAGA
@@ -42,9 +40,15 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 bg-gradient-to-br from-dark-bg via-black to-dark-bg">
-        <div class="container mx-auto px-6 text-center">
+    <section class="relative h-screen flex items-center justify-center text-center">
+        <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-0">
+            <source src="video-fundo.mp4" type="video/mp4">
+            Seu navegador não suporta vídeos.
+        </video>
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black/70 z-10"></div>
+
+        <div class="relative z-20 container mx-auto px-6">
             <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
                 Opere Bitcoin de Forma <span class="text-ox-red">Inteligente</span>
             </h1>
@@ -57,7 +61,6 @@
         </div>
     </section>
 
-    <!-- Problema Section -->
     <section class="py-16 bg-card-bg/30">
         <div class="container mx-auto px-6">
             <div class="max-w-4xl mx-auto text-center">
@@ -70,7 +73,6 @@
         </div>
     </section>
 
-    <!-- Performance Section -->
     <section class="py-20 bg-gradient-to-r from-dark-bg to-card-bg/50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
@@ -79,34 +81,27 @@
             </div>
             
             <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                <!-- Métricas -->
                 <div class="bg-card-bg rounded-2xl p-8 border border-gray-800">
                     <h3 class="text-2xl font-bold mb-6 text-ox-red">Métricas de Performance</h3>
                     <div class="space-y-6">
                         <div class="flex items-center justify-between p-4 bg-dark-bg/50 rounded-lg">
                             <span class="text-lg">Rentabilidade</span>
-                            <!-- MUDANÇA: Valor atualizado -->
                             <span class="text-2xl font-bold text-ox-red">+5.03%</span>
                         </div>
                         <div class="flex items-center justify-between p-4 bg-dark-bg/50 rounded-lg">
                             <span class="text-lg">Taxa de Acerto</span>
-                            <!-- VALOR MANTIDO: Sem novos dados -->
                             <span class="text-2xl font-bold text-ox-red">93.33%</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Área para Gráficos Personalizados -->
                 <div class="bg-card-bg rounded-2xl border border-gray-800 overflow-hidden">
-                    
                     <div class="px-8 pt-8">
                         <h3 class="text-2xl font-bold mb-6 text-ox-red">Comparação de Performance</h3>
                     </div>
-
                     <div class="flex justify-center">
                         <img src="https://raw.githubusercontent.com/TlsAndrade/MeuSite/main/1mes.png" alt="Gráfico de performance comparativa do último mês" class="w-11/12 h-80">
                     </div>
-                 
                     <div class="p-8">
                         <div class="space-y-4">
                             <div class="flex items-center justify-between">
@@ -146,44 +141,34 @@
                                 </div>
                             </div>
                         </div>
-                        
                         <p class="text-gray-300 font-semibold mt-6 text-center">
                             "Enquanto o mercado tradicional caía, nossa estratégia gerava lucro."
                         </p>
                     </div>
                 </div>
-        </div>
+            </div>
     </section>
 
-    <!-- Métricas de Confiança -->
     <section class="py-16 bg-card-bg/30">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-3xl font-bold mb-4">Controle de Risco Avançado</h2>
                 <p class="text-lg text-gray-300">Tecnologia focada em preservar seu capital</p>
             </div>
-            
             <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
                 <div class="bg-card-bg rounded-xl p-8 text-center border border-gray-800">
                     <div class="w-16 h-16 bg-ox-red/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-ox-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
-                        </svg>
+                        <svg class="w-8 h-8 text-ox-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.031 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Máximo Drawdown</h3>
-                    <!-- VALOR MANTIDO: Sem novos dados -->
                     <p class="text-3xl font-bold text-ox-red mb-2">1.23%</p>
                     <p class="text-gray-300">Estratégia com foco em controle de risco</p>
                 </div>
-                
                 <div class="bg-card-bg rounded-xl p-8 text-center border border-gray-800">
                     <div class="w-16 h-16 bg-ox-red/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <svg class="w-8 h-8 text-ox-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
-                        </svg>
+                        <svg class="w-8 h-8 text-ox-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path></svg>
                     </div>
                     <h3 class="text-xl font-bold mb-2">Profit Factor</h3>
-                    <!-- VALOR MANTIDO: Sem novos dados -->
                     <p class="text-3xl font-bold text-ox-red mb-2">4.72x</p>
                     <p class="text-gray-300">Para cada real de risco, o retorno foi 4.72 vezes maior</p>
                 </div>
@@ -191,14 +176,12 @@
         </div>
     </section>
 
-    <!-- Planos e Preços -->
     <section class="py-20 bg-gradient-to-br from-dark-bg to-card-bg/50">
         <div class="container mx-auto px-6">
             <div class="text-center mb-12">
                 <h2 class="text-4xl font-bold mb-4">Acesso exclusivo e preço especial de lançamento</h2>
                 <p class="text-xl text-gray-300">Entre para a lista de espera e garanta sua vaga para quando o robô for lançado.</p>
             </div>
-            
             <div class="max-w-md mx-auto">
                 <div class="bg-card-bg rounded-2xl p-8 border-2 border-ox-red relative">
                     <div class="absolute -top-4 left-1/2 transform -translate-x-1/2">
@@ -211,60 +194,32 @@
                             <span class="text-gray-300">/mês</span>
                         </div>
                         <ul class="space-y-3 mb-8 text-left">
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Acesso completo ao Robô
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Sinais em tempo real
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Relatórios de performance
-                            </li>
-                            <li class="flex items-center">
-                                <svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Suporte técnico especializado
-                            </li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Acesso completo ao Robô</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Sinais em tempo real</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Relatórios de performance</li>
+                            <li class="flex items-center"><svg class="w-5 h-5 text-ox-red mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg> Suporte técnico especializado</li>
                         </ul>
-
-                        <a href="inscricao.html" class="block w-full bg-ox-red text-white py-4 rounded-lg text-lg font-semibold hover:bg-ox-red/90 transition-all transform hover:scale-105">
-                            QUERO ENTRAR NA LISTA DE ESPERA
-                        </a>
-
-                        <p class="text-gray-400 text-sm mt-4">
-                            ✓ A inscrição na lista é gratuita e sem compromisso.
-                        </p>
+                        <a href="inscricao.html" class="block w-full bg-ox-red text-white py-4 rounded-lg text-lg font-semibold hover:bg-ox-red/90 transition-all transform hover:scale-105">QUERO ENTRAR NA LISTA DE ESPERA</a>
+                        <p class="text-gray-400 text-sm mt-4">✓ A inscrição na lista é gratuita e sem compromisso.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer/Disclaimer -->
     <footer class="bg-card-bg py-12 border-t border-gray-800">
         <div class="container mx-auto px-6">
             <div class="text-center mb-8">
                 <div class="flex items-center justify-center space-x-4 mb-4">
                     <img src="logo-oxtmo.png" alt="Logo OxTMO" class="w-40 h-25">
-            
                 </div>
-                <p class="text-gray-400 max-w-2xl mx-auto">
-                    Tecnologia avançada para maximizar seus resultados no mercado de criptomoedas.
-                </p>
+                <p class="text-gray-400 max-w-2xl mx-auto">Tecnologia avançada para maximizar seus resultados no mercado de criptomoedas.</p>
             </div>
-            
             <div class="border-t border-gray-700 pt-8">
                 <div class="bg-yellow-900/20 border border-yellow-500/30 rounded-lg p-6 mb-6">
                     <h4 class="text-yellow-400 font-semibold mb-2">⚠️ Aviso Importante</h4>
-                    <p class="text-sm text-gray-300">
-                        Os resultados apresentados são baseados em dados históricos e não garantem performance futura. 
-                        Todo investimento em criptoativos envolve riscos. Recomendamos que você invista apenas o que pode se dar ao luxo de perder 
-                        e sempre busque orientação profissional antes de tomar decisões de investimento.
-                    </p>
+                    <p class="text-sm text-gray-300">Os resultados apresentados são baseados em dados históricos e não garantem performance futura. Todo investimento em criptoativos envolve riscos. Recomendamos que você invista apenas o que pode se dar ao luxo de perder e sempre busque orientação profissional antes de tomar decisões de investimento.</p>
                 </div>
-                
                 <div class="text-center text-gray-500 text-sm">
                     <p>© 2025 OxTMO. Todos os direitos reservados.</p>
                 </div>
@@ -272,9 +227,8 @@
         </div>
     </footer>
 
-    <!-- O JavaScript de animações permanece o mesmo -->
     <script>
-        document.querySelectorAll('button').forEach(button => {
+        document.querySelectorAll('a.bg-ox-red, button.bg-ox-red').forEach(button => {
             button.addEventListener('click', function() {
                 this.style.transform = 'scale(0.95)';
                 setTimeout(() => {
